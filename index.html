@@ -7,11 +7,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="header">
+
+        <div class="header-title">Etch-a-Sketch</div>
+
+    </div>
+
+    <div id="container">
+
+        <!--    Grid size initializer    -->
+        <button id="button-initializer">Press me</button>
+
     </div>
     <div class="content">
+
+        <!--    Will contain options for the grid    -->
+        <div class="content-left">
+            
+        </div>
+
+        <!--    Will contain the grid -->
+        <div class="content-center">
+
+        </div>
+
+        <!--    Will contain extras     -->
+        <div class="content-right">
+
+        </div>
+        
     </div>
-    <div class="footer"> Copyright @ The Odin Project 2026</div>
+
+    <div class="footer">Copyright @ The Odin Project 2026</div>
+
     
+    <script>
+        //              ********   SCRIPT   ********
+
+
+        //  Connects this variable to the button inside the document
+        const buttonInitializer = document.querySelector("#button-initializer");
+
+        //  This will check if there is already a grid
+        //  If there is on the next button press will delete the previous grid
+        //  before generating another one
+        let gridActive = false;
+
+
+        //  This will connect the button to the grid initializer function
+        // button.addEventListener("click", gridInitializer);
+
+    </script>
 </body>
 </html>
